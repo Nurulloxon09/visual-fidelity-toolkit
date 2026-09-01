@@ -40,6 +40,17 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-stat-purple: var(--stat-purple);
+  --color-stat-blue: var(--stat-blue);
+  --color-stat-orange: var(--stat-orange);
+  --color-stat-green: var(--stat-green);
+  --color-chart-teacher: var(--chart-teacher);
+  --color-chart-student: var(--chart-student);
+  --color-chart-female: var(--chart-female);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: var(--shadow-card);
+  --shadow-shell: var(--shadow-shell);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -155,5 +166,11 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
+}
+
+@utility bg-page-gradient {
+  background-image: var(--gradient-page);
 }
