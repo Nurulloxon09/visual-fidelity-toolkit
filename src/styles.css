@@ -40,6 +40,17 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-stat-purple: var(--stat-purple);
+  --color-stat-blue: var(--stat-blue);
+  --color-stat-orange: var(--stat-orange);
+  --color-stat-green: var(--stat-green);
+  --color-chart-teacher: var(--chart-teacher);
+  --color-chart-student: var(--chart-student);
+  --color-chart-female: var(--chart-female);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: var(--shadow-card);
+  --shadow-shell: var(--shadow-shell);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
@@ -62,21 +73,36 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.875rem;
+  --background: oklch(0.985 0.005 300);
+  --foreground: oklch(0.22 0.03 280);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.22 0.03 280);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.22 0.03 280);
+  --primary: oklch(0.51 0.25 296);
+  --primary-foreground: oklch(0.99 0.005 300);
+  --primary-soft: oklch(0.95 0.035 300);
+  --secondary: oklch(0.97 0.01 290);
+  --secondary-foreground: oklch(0.3 0.04 285);
+  --muted: oklch(0.97 0.008 290);
+  --muted-foreground: oklch(0.55 0.02 285);
+  --accent: oklch(0.96 0.02 300);
+  --accent-foreground: oklch(0.35 0.1 296);
+
+  /* dashboard stat tiles */
+  --stat-purple: oklch(0.93 0.05 300);
+  --stat-blue: oklch(0.94 0.04 235);
+  --stat-orange: oklch(0.95 0.04 60);
+  --stat-green: oklch(0.94 0.05 155);
+
+  --chart-teacher: oklch(0.58 0.25 300);
+  --chart-student: oklch(0.75 0.14 220);
+  --chart-female: oklch(0.72 0.17 55);
+
+  --shadow-card: 0 1px 2px oklch(0.45 0.1 296 / 0.06), 0 8px 24px oklch(0.45 0.1 296 / 0.06);
+  --shadow-shell: 0 24px 70px oklch(0.35 0.12 296 / 0.22);
+  --gradient-page: linear-gradient(160deg, oklch(0.78 0.14 300), oklch(0.72 0.16 295));
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.929 0.013 255.508);
@@ -140,5 +166,11 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
+}
+
+@utility bg-page-gradient {
+  background-image: var(--gradient-page);
 }
