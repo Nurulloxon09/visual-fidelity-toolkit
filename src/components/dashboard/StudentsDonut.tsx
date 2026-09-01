@@ -36,7 +36,7 @@ function Ring() {
       </svg>
       <div className="absolute inset-0 grid place-content-center text-center">
         <p className="text-[15px] text-muted-foreground">Total</p>
-        <p className="text-3xl font-bold tracking-tight text-foreground">{total.toLocaleString()}</p>
+        <p className="text-3xl font-bold tracking-tight text-foreground">{total}</p>
       </div>
     </div>
   );
