@@ -1,12 +1,11 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { Sidebar } from "@/components/dashboard/Sidebar";
-import { Topbar } from "@/components/dashboard/Topbar";
+import { DashboardShell } from "@/components/dashboard/DashboardShell";
 import { StatCards } from "@/components/dashboard/StatCards";
 import { ExamResultsChart } from "@/components/dashboard/ExamResultsChart";
 import { StudentsDonut } from "@/components/dashboard/StudentsDonut";
 import { StarStudents } from "@/components/dashboard/StarStudents";
 import { ActivityList } from "@/components/dashboard/ActivityList";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
