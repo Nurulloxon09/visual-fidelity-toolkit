@@ -34,8 +34,8 @@ function Index() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-page-gradient p-0 lg:p-8">
-      <div className="mx-auto flex min-h-screen w-full max-w-[1440px] overflow-hidden bg-card lg:min-h-[calc(100vh-4rem)] lg:rounded-3xl lg:shadow-shell">
+    <div className="min-h-screen bg-card">
+      <div className="flex min-h-screen w-full overflow-hidden bg-card">
         <div className="hidden border-r border-border/70 lg:block">
           <Sidebar />
         </div>
