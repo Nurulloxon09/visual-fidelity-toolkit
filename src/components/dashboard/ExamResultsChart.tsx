@@ -64,14 +64,14 @@ export function ExamResultsChart() {
               tick={{ fill: "var(--muted-foreground)", fontSize: 12 }}
             />
             <Area
-              type="basis"
+              type="monotone"
               dataKey="students"
               stroke="var(--chart-student)"
               strokeWidth={3}
               fill="url(#studentFill)"
             />
             <Area
-              type="basis"
+              type="monotone"
               dataKey="teacher"
               stroke="var(--chart-teacher)"
               strokeWidth={3}
